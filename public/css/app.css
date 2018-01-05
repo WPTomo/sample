@@ -8421,6 +8421,14 @@ p {
   color: #fff;
 }
 
+#logout {
+  cursor: default;
+}
+
+#logout:hover {
+  background-color: transparent;
+}
+
 /* footer */
 
 footer {
@@ -8521,5 +8529,34 @@ input {
 
 .panel {
   margin-top: 50px;
+}
+
+/* _messages */
+
+.shared-msg {
+  -webkit-animation: shared-msg 2s;
+          animation: shared-msg 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shared-msg {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes shared-msg {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 

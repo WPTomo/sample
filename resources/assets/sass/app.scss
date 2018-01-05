@@ -69,6 +69,13 @@ p {
   }
 }
 
+#logout {
+  cursor: default;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
 /* footer */
 
 footer {
@@ -164,4 +171,17 @@ input {
 
 .panel {
   margin-top: 50px;
+}
+
+/* _messages */
+
+.shared-msg
+{
+    animation:shared-msg 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shared-msg{
+    from{opacity: 1;}
+    to{opacity: 0;}
 }
